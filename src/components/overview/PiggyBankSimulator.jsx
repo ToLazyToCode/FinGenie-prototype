@@ -122,7 +122,7 @@ function PiggyBankSimulator() {
     setOverspendingPercent(overspendCheck.percent);
     
     // Cập nhật tổng chi tiêu đến hiện tại (giả lập thêm chi tiêu hôm nay)
-    setTotalSpentSoFar(prev => prev + spending);
+    // setTotalSpentSoFar(prev => prev + spending);
     
     // Tính toán kế hoạch cân bằng
     const rebalancePlan = calculateRebalancePlan();
