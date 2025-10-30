@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "vite preview --port $PORT --host 0.0.0.0"
   },
   "dependencies": {
     "chart.js": "^4.5.1",
@@ -29,9 +30,9 @@
     "postcss": "^8.5.6",
     "postcss-import": "^16.1.1",
     "tailwindcss": "^4.1.16",
-    "vite": "npm:rolldown-vite@7.1.14"
+    "vite": "^5.4.0"
   },
   "overrides": {
-    "vite": "npm:rolldown-vite@7.1.14"
+    "vite": "^5.4.0"
   }
 }
