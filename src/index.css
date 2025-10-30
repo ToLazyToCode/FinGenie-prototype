@@ -1,0 +1,21 @@
+/* Custom components */
+.chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  max-height: 350px;
+}
+
+.nav-btn.active, .tab-btn.active {
+  border-bottom-color: #059669;
+  color: #059669;
+  font-weight: 600;
+}
+
+.nav-btn, .tab-btn {
+  border-bottom-width: 2px;
+  border-bottom-color: transparent;
+}
