@@ -12,3 +12,55 @@ body {
   min-height: 100vh;
   width: 100%;
 }
+
+/* Container */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    min-width: 250px;
+    max-width: 350px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideIn 0.4s forwards, fadeOut 0.4s forwards 2.6s;
+    z-index: 9999;
+}
+
+/* Body text */
+.toast-body {
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Variants */
+.toast.success {
+    background-color: #16a34a; /* emerald-600 */
+}
+
+.toast.error {
+    background-color: #dc2626; /* red-600 */
+}
+
+.toast.info {
+    background-color: #2563eb; /* blue-600 */
+}
+
+/* Animations */
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
